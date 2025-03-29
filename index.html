@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <a href="https://t.me/pigstorebot" class="pig-3d-header" target="_blank">
+        <h1 class="pig-3d-title">
+          <span class="pig-3d-letter">P</span>
+          <span class="pig-3d-letter">I</span>
+          <span class="pig-3d-letter">G</span>
+          <img src="иконки/pig.png" alt="Pig Logo" class="pig-logo-3d">
+          <span class="pig-3d-letter">S</span>
+          <span class="pig-3d-letter">T</span>
+          <span class="pig-3d-letter">O</span>
+          <span class="pig-3d-letter">R</span>
+          <span class="pig-3d-letter">E</span>
+        </h1>
+        <div class="pig-3d-shadow"></div>
+      </a>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Shop 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<button class="back-to-top" id="backToTop" title="Наверх">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+<div class="snowflakes"></div>
+<!-- Welcome Overlay -->
+<div class="welcome-overlay" id="welcomeOverlay">
+    <div class="welcome-content">
+        <h1 class="welcome-text" id="welcomeText">Добро пожаловать!</h1>
+        <img src="гифки/hey.gif" alt="Hey" class="welcome-sticker" id="welcomeSticker">
+        <button class="welcome-button" id="welcomeButton">Продолжить</button>
+    </div>
+</div>
+
+<body>
+    <div class="parallax-bg"></div>
+    
+    <div class="container">
+        <!-- Поисковая строка -->
+        <div class="search-bar fade-in">
+            <input type="text" class="search-input" placeholder="Поиск Годли">
+        </div>
+
+        <!-- Модальное окно -->
+<div class="robux-modal" id="robuxModal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeRobuxModal()">×</button>
+      <div class="robux-products">
+        <div class="robux-item">
+          <img src="робух/250 rb.jpg" alt="100 Robux">
+          <h3>250 робуксов</h3>
+          <p class="robux-price">400₽</p>
+          <button class="buy-robux-btn" onclick="window.open('https://t.me/zipkarr', '_blank')">Купить</button>
+        </div>
+        <div class="robux-item">
+          <img src="робух/500 rb.jpg" alt="500 Robux">
+          <h3>500 робуксов</h3>
+          <p class="robux-price">750₽</p>
+          <button class="buy-robux-btn" onclick="window.open('https://t.me/zipkarr', '_blank')">Купить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Кнопка в существующем блоке -->
+  <div class="robux-btn-wrapper">
+    <button class="nav-button" onclick="openRobuxModal()">
+      <i class="fas fa-coins"></i> Купить Robux
+    </button>
+  </div>
+
+        <!-- Кнопки навигации -->
+        <div class="nav-buttons">
+            <a href="https://t.me/+RIKyWYiQ19szZDYy" class="nav-button fade-in delay-1">
+                <img src="whatbun.png" alt="Отзывы">
+                Отзывы
+            </a>
+            <a href="https://telegra.ph/kak-kupit-v-pig-store-03-28" class="nav-button fade-in delay-2">
+                <i class="fas fa-shopping-cart" style="margin-right: 10px;"></i>
+                Как купить?
+            </a>
+            <a href="https://t.me/guienapig" class="nav-button fade-in delay-3" style="background: linear-gradient(45deg, #6e45e2, #9476e7);">
+                Наш ТГ ❤
+            </a>
+</div>
+        </div>
+
+        <!-- Сетка товаров -->
+        <div class="products-grid">
+            <!-- Товар 1 -->
+            <div class="product-card fade-in delay-1">
+                <div class="product-image-container">
+                    <img src="карточки товаров/Небесный карточка.jpg" alt="небесный" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">небесный😎 (Celestial)</h3>
+                    <h3 class="product-title"><p style="color: rgb(127, 255, 150);">в наличии</p></h3>
+                    <p class="product-price">2000₽</p>
+                    <a href="https://t.me/zipkarr" class="buy-button pulse">Купить</a>
+                    <!-- Добавьте этот div перед закрывающим тегом </div> для products-grid -->
+<div class="no-results">
+    <i class="fas fa-search" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+    <p>Ничего не найдено</p>
+    <p>Попробуйте изменить запрос</p>
+</div>
+                </div>
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="product-card fade-in delay-2">
+                <div class="product-image-container">
+                    <img src="карточки товаров/Арбалет карточка.jpg" alt="арбалет" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Арбалетик🥱 (Harvester)</h3>
+                    <h3 class="product-title"><p style="color: rgb(127, 255, 150);">в наличии</p></h3>
+                    <p class="product-price">1799₽</p>
+                    <a href="https://t.me/zipkarr" class="buy-button pulse">Купить</a>
+                </div>
+            </div>
+
+            <!-- Дубликаты товаров (18 штук) -->
+            <div class="product-card fade-in delay-1">
+                <div class="product-image-container">
+                    <img src="карточки товаров/Конфеточка Карта.jpg" alt="кенди" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Конфетка🍬 (Candy)</h3>
+                    <h3 class="product-title"><p style="color: rgb(255, 127, 127);">заканчивается... (10 шт.)</h3>
+                        <p class="product-price">800₽</p>
+                    <a href="https://t.me/zipkarr" class="buy-button pulse">Купить</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-2">
+                <div class="product-image-container">
+                    <img src="карточки товаров/коруптик карточка.jpg" alt="карупто" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Коруптик🙄 (corrupt)</h3>
+                    <h3 class="product-title"><p style="color: rgb(127, 255, 150);">в наличии</p></h3>
+                    <p class="product-price">1699₽</p>
+                    <a href="https://t.me/zipkarr" class="buy-button pulse">Купить</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-1">
+                <div class="product-image-container">
+                    <img src="карточки товаров/СИРЛО СЕТ.jpg" alt="сирло" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Обсирло Сетик😋 (Seer Set)</h3>
+                    <h3 class="product-title"><p style="color: rgb(127, 255, 150);">в наличии каждый</p></h3>
+                    цена за 1 шт. 150₽
+                    <p class="product-price">500₽</p>
+                    <a href="https://t.me/zipkarr" class="buy-button pulse">Купить</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-2">
+                <div class="product-image-container">
+                    <img src="карточки товаров/ХЕРТ БЛЕЙД КАРТОЧКА.jpg" alt="херблейд" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">ХертБлейдс💖 (HeartBlade)</h3>
+                    <h3 class="product-title"><p style="color: rgb(255, 127, 127);">заканчивается... (5 шт.)</p></h3>
+                    <p class="product-price">500₽</p>
+                    <a href="https://t.me/zipkarr" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-1">
+                <div class="product-image-container">
+                    <img src="карточки товаров/паперминт карта.jpg" alt="попермынт" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Пепердриппер💥 (Peppermint)</h3>
+                    <h3 class="product-title"><p style="color: rgb(255, 187, 127);">Скоро Закончится... (25 шт.)</p></h3>
+                    <p class="product-price">200₽</p>
+                    <a href="https://t.me/zipkarr" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-2">
+                <div class="product-image-container">
+                    <img src="pic.png" alt="Товар 8" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Премиум решение PIC</h3>
+                    <p class="product-price">1499 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-1">
+                <div class="product-image-container">
+                    <img src="rib.png" alt="Товар 9" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Инновационный продукт RIB</h3>
+                    <p class="product-price">999 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-2">
+                <div class="product-image-container">
+                    <img src="pic.png" alt="Товар 10" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Премиум решение PIC</h3>
+                    <p class="product-price">1499 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-1">
+                <div class="product-image-container">
+                    <img src="rib.png" alt="Товар 11" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Инновационный продукт RIB</h3>
+                    <p class="product-price">999 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-2">
+                <div class="product-image-container">
+                    <img src="pic.png" alt="Товар 12" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Премиум решение PIC</h3>
+                    <p class="product-price">1499 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-1">
+                <div class="product-image-container">
+                    <img src="rib.png" alt="Товар 13" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Инновационный продукт RIB</h3>
+                    <p class="product-price">999 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-2">
+                <div class="product-image-container">
+                    <img src="pic.png" alt="Товар 14" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Премиум решение PIC</h3>
+                    <p class="product-price">1499 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-1">
+                <div class="product-image-container">
+                    <img src="rib.png" alt="Товар 15" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Инновационный продукт RIB</h3>
+                    <p class="product-price">999 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-2">
+                <div class="product-image-container">
+                    <img src="pic.png" alt="Товар 16" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Премиум решение PIC</h3>
+                    <p class="product-price">1499 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-1">
+                <div class="product-image-container">
+                    <img src="rib.png" alt="Товар 17" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Инновационный продукт RIB</h3>
+                    <p class="product-price">999 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-2">
+                <div class="product-image-container">
+                    <img src="pic.png" alt="Товар 18" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Премиум решение PIC</h3>
+                    <p class="product-price">1499 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-1">
+                <div class="product-image-container">
+                    <img src="rib.png" alt="Товар 19" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Инновационный продукт RIB</h3>
+                    <p class="product-price">999 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+
+            <div class="product-card fade-in delay-2">
+                <div class="product-image-container">
+                    <img src="pic.png" alt="Товар 20" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Премиум решение PIC</h3>
+                    <p class="product-price">1499 ₽</p>
+                    <a href="https://t.me/winlo" class="buy-button pulse">Купить сейчас</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Футер в стиле 2025 -->
+<footer class="futuristic-footer">
+    <div class="footer-grid">
+        <!-- Блок с лого и описанием -->
+        <div class="footer-brand">
+            <div class="logo-pulse">🛸</div>
+            <h3>Pig-Store</h3>
+            <p>Магазин годли в мм2</p>
+            <div class="neon-badge">Created by: @guienapig @zipkarr (telegram)</div>
+        </div>
+
+        <!-- Навигация -->
+        <div class="footer-nav">
+            <h4>Ознакомся⤵😎</h4>
+            <ul>
+                <li><a href="#" class="hologram-link">Быстрая Доставка</a></li>
+                <li><a href="#" class="hologram-link">Ответ в течении 24 часов</a></li>
+                <li><a href="#" class="hologram-link">Собираем все отзывы</a></li>
+                <li><a href="#" class="hologram-link">платежи в Stars\RUB\Robux</a></li>
+            </ul>
+        </div>
+
+        <!-- Технологии -->
+        <div class="tech-stack">
+            <h4>Оплата по</h4>
+            <div class="tech-icons">
+                <div class="tech-icon" title="Квантовые вычисления">
+                    <img src="иконки/mastercard.svg" alt="Witch Tech">
+                </div>
+                <div class="tech-icon" title="Web5.0">
+                    <img src="иконки/bitcoin.svg" alt="Witch Web">
+                </div>
+                <div class="tech-icon" title="ИИ-ассистент">
+                    <img src="иконки/tinkoff.png" alt="Witch AI">
+                </div>
+                <div class="tech-icon" title="Blockchain">
+                    <img src="иконки/тгпрем.png" alt="Witch Chain">
+                </div>
+            </div>
+
+        <!-- Контакты -->
+        <div class="footer-contacts">
+            <h4>соц-сети:</h4>
+            <a href="https://t.me/ваш_канал" class="telegram-btn">
+                <i class="fab fa-telegram"></i> Наш телеграм-канал
+            </a>
+            <div class="qr-hologram">
+                <div class="qr-code">⎙</div>
+                <p>запрещено копирование</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Pig-Store Portal. | Все права защищены</p>
+        <div class="crypto-accepted">
+            <span>₿</span>
+            <span>Ξ</span>
+            <span>◎</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
